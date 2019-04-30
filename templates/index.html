@@ -1,9 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Ocaml</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+	height:600px;
+    width:90%;
+  }
+  </style>
 </head>
 <body>
-Ocaml Presentation
+<center><h1>Ocaml Presentation</h1>
+<div id="container">
+<div id="demo" class="carousel slide" data-ride="carousel">
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../static/Ocaml.jpg" alt="Los Angeles" width="500" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="../static/Ocaml(1).jpg" alt="Chicago" width="500" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="../static/Ocaml(2).jpg" alt="New York" width="500" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src="../static/Ocaml(3).jpg" alt="New York" width="500" height="500">
+    </div>
+	    <div class="carousel-item">
+      <img src="../static/Ocaml(4).jpg" alt="New York" width="500" height="500">
+    </div>
+	    <div class="carousel-item">
+      <img src="../static/Ocaml(5).jpg" alt="New York" width="500" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+<h2>
+But why should I care about Ocaml?
+</h2>
+<p>Running a speed test on the fibonacci sequence, one of the classic recursion problems used to demonstrate the speed and effectiveness of a language,
+as we increment the value of our fibonacci index, we see that the difference in time between our Python and C compile time differs greatly,
+with C running faster due to it being more optimized towards dealing with calculations due to its static-typed nature to Python's dynamically typed nature.
+However, Ocaml, being a high-level language manages to keep up close with C compile time around a second by also being static-typed.
+This allows whoever is using Ocaml to write simple, efficient code with fast processes. Ocaml has many libraries it shares with other dynamically-typed languages,
+which is why it was developed into one of the modern langauges Rust, and is technically used to this day to create an array of products such as Discord.</p>
 </body>
 </html>
